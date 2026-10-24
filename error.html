@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}{{ code }}{% endblock %}{% block content %}<section class="error-page panel"><div class="eyebrow">SOMETHING GOT IN THE WAY</div><h1>{{ code }}</h1><h2>{{ message }}</h2><a class="btn btn-primary" href="{{ url_for('dashboard') if current_user else url_for('index') }}">Back to workspace →</a></section>{% endblock %}
